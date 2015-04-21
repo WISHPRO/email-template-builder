@@ -14,7 +14,6 @@ gulp.task('sass', function() {
 
 // Build full HTML file(s)
 gulp.task('build', ['sass'], function() {
-    // gulp.src('./source/css/*').pipe(gulp.dest('./dist/html/css/'));
     gulp.src('./source/images/*').pipe(gulp.dest('./dist/html/images'));
     return gulp.src('./source/layout.html')
         .pipe(fileinclude({
