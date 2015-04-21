@@ -1,0 +1,189 @@
+// Font sizing
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
+$font-size-base:          14px;
+$font-size-large:         ceil(($font-size-base * 1.15)); // ~16px
+$font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
+$font-size-h5:            $font-size-base;
+$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
+
+$line-height:        1.3;
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+  color: $text-colour;
+  font-size: $font-size-base;
+  font-family: $font-family-sans-serif;
+  font-weight: normal;
+  padding:0;
+  margin: 0;
+  text-align: left;
+  line-height: $line-height;
+}
+
+body, table.body, p, td {
+  font-size: $font-size-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $text-colour;
+  font-weight: bold;
+  word-break: normal;
+
+  &.capitalise {
+    text-transform: uppercase;
+  }
+}
+
+h1 {
+  font-size: $font-size-h1;
+  color: $text-colour;
+  font-weight: bold;
+  word-break: normal;
+
+  a {
+    color: $link-colour;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+      color: $link-colour-hover;
+      text-decoration: none;
+    }
+  }
+}
+
+h2 {
+  font-size: $font-size-h2;
+  color: $text-colour;
+  font-weight: bold;
+  word-break: normal;
+
+  a {
+    color: $link-colour;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+      color: $link-colour-hover;
+      text-decoration: none;
+    }
+  }
+}
+
+h3 {
+  font-size: $font-size-h3;
+  color: $text-colour;
+  font-weight: bold;
+  word-break: normal;
+
+  a {
+    color: $link-colour;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+      color: $link-colour-hover;
+      text-decoration: none;
+    }
+  }
+}
+
+h4 {
+  font-size: $font-size-h4;
+  color: $text-colour;
+  font-weight: bold;
+  word-break: normal;
+
+  a {
+    color: $link-colour;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+      color: $link-colour-hover;
+      text-decoration: none;
+    }
+  }
+}
+
+h5 {
+  font-size: $font-size-h5;
+  color: $text-colour;
+  font-weight: bold;
+  word-break: normal;
+
+  a {
+    color: $link-colour;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+      color: $link-colour-hover;
+      text-decoration: none;
+    }
+  }
+}
+
+h6 {
+  font-size: $font-size-h6;
+  color: $text-colour;
+  font-weight: bold;
+  word-break: normal;
+
+  a {
+    color: $link-colour;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+      color: $link-colour-hover;
+      text-decoration: none;
+    }
+  }
+}
+
+p.lead {
+  font-size: $font-size-large;
+}
+
+p {
+  margin-bottom: 10px;
+
+  &.lead {
+    font-size: $font-size-large;
+  }
+}
+
+small {
+  font-size: $font-size-small;
+}
+
+a {
+  color: $link-colour;
+  text-decoration: underline;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
+    color: $link-colour-hover;
+  }
+}
